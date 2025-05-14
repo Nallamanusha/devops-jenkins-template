@@ -12,3 +12,8 @@ void call(String env) {
         echo "No recognized build file found. Skipping shell build."
     }
 }
+
+void call() {
+    echo "Building the application..."
+    sh 'chmod +x jenkins/scripts/build.sh && jenkins/scripts/build.sh'
+}
