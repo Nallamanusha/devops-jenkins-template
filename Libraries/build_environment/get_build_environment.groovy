@@ -1,5 +1,4 @@
-
-void call() {
+boolean call() {
     echo "Setting up build environment..."
 
     // Set default values if not already set
@@ -12,4 +11,9 @@ void call() {
 
     env.BUILD_ENV_TAG = "${env.OS}-${env.ARCH}"
     echo "Build Env Tag: ${env.BUILD_ENV_TAG}"
+
+    // Logic to check if update is needed
+    echo "Checking if build environment needs update..."
+    // TODO: Add actual logic here
+    return true
 }
