@@ -1,6 +1,6 @@
 void call(Map config = [:]) {
     def source = config.source ?: 'build/**'
-    def target = config.target ?: 's3://my-default-bucket/'
+    def target = config.target ?: 's3://dev-veda-cms-ui/'
     def exclude = config.exclude ?: ''
 
     echo "Deploying to S3..."
